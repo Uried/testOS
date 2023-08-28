@@ -10,7 +10,7 @@ const Contact = () => {
     e.preventDefault();
 
 
-  axios.post('http://localhost:5300/send-mail', {
+  axios.post('https://backend-portfolio-two.vercel.app/send-mail', {
     name,
     email,
     message

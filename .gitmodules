@@ -1,0 +1,3 @@
+[submodule "backend_portfolio"]
+	path = backend_portfolio
+	url = https://github.com/Uried/backend_portfolio.git
