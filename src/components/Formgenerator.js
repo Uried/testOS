@@ -286,12 +286,13 @@ const FormGenerator = () => {
           <option value="F2">Formulaire F2</option>
           <option value="F3">Formulaire F3</option>
         </select>
-        <div className="mt-96 font-bold text-xl">
+      </div>
+      {renderForm()}
+
+      <div className="font-bold text-xl ml-96">
           <p>FONGANG Uried Merveil</p>
            <p>680603928/695782165</p>
         </div>
-      </div>
-      {renderForm()}
     </div>
   );
 };
