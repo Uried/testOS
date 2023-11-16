@@ -1,25 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Works from './components/Works';
-//import Particles from 'react-particles';
-//import particlesConfig from './config/configParticles';
-import Stars from './Particles';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import FormGenerator from './components/Formgenerator';
+import DynamicForm from './components/formulaire';
 
 function App() {
   return (
     <div className="App">
-      <Stars />
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Works />
-      <Contact />
+      <Router>
+
+      <Routes>
+        <Route path='/' element={<FormGenerator />} />  
+          <Route path='/dynamicform' element={<DynamicForm />} />  
+
+           </Routes>
+
+      </Router>
+    
     </div>  
   )
 }
